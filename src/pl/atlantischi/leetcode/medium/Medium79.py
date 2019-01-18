@@ -27,7 +27,7 @@ class Solution(object):
 
     # Approach 2: Brute O(1) space
     def setZeroes2(self, matrix):
-        
+
         modify = -999999
 
         vl = len(matrix)

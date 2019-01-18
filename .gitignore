@@ -1,6 +1,7 @@
 *.iml
 /.idea/
 /.vscode/
+/output/
 build/
 .DS_Store
 
