@@ -7,8 +7,9 @@ package pl.atlantischi.base
  */
 
 
-class ListNode(var value: Int = 0, nextBlock: (ListNode.() -> ListNode?)? = null) {
+class ListNode @JvmOverloads constructor (var value: Int = 0, nextBlock: (ListNode.() -> ListNode?)? = null) {
 
+    @JvmField
     var next: ListNode? = nextBlock?.invoke(this)
 
     override fun toString(): String {

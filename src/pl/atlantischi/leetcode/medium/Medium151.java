@@ -1,5 +1,8 @@
 package pl.atlantischi.leetcode.medium;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
 
     给定一个字符串，逐个翻转字符串中的每个单词。

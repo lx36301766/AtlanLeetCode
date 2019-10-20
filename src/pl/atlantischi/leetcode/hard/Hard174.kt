@@ -52,8 +52,7 @@ fun calculateMinimumHP(dungeon: Array<IntArray>): Int {
             return 0
         }
         for (j in columnSize - 1 downTo 0) {
-            dungeon[i][j] =
-                    if (i == dungeon.size - 1 && j == dungeon[i].size - 1) {
+            dungeon[i][j] = if (i == dungeon.size - 1 && j == dungeon[i].size - 1) {
                         Math.max(1 - dungeon[i][j], 1)
                     } else if (i == dungeon.size - 1) {
                         Math.max(dungeon[i][j + 1] - dungeon[i][j], 1)
